@@ -1,0 +1,21 @@
+:root {
+	--main-color-red: #dc3545;
+}
+
+.navbar-logo {
+	width: 100px;
+}
+
+.navbar {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.nav-link {
+	color: #212223;
+	transition: all 0.4s ease;
+}
+
+.nav-link:hover {
+	color: var(--main-color-red);
+}
