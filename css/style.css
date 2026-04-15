@@ -2,13 +2,28 @@
 	--main-color-red: #dc3545;
 }
 
+.bg-main-color-red {
+	background-color: var(--main-color-red);
+}
+
+.text-main-color-red {
+	color: var(--main-color-red);
+}
+
+.up-button:hover {
+	border-color: var(--main-color-red);
+	color: var(--main-color-red) !important;
+}
+
 .navbar-logo {
-	width: 100px;
+	width: 200px;
+	height: 80px;
 }
 
 .navbar {
 	text-transform: uppercase;
 	font-weight: 500;
+	background: #ffffff;
 }
 
 .nav-link {
@@ -18,4 +33,58 @@
 
 .nav-link:hover {
 	color: var(--main-color-red);
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--bs-body-color);
+}
+
+.carousel-item-header {
+	color: var(--main-color-red);
+	font-size: 2.5rem;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-main-color-with-shadow {
+	color: var(--main-color-red);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item-paragraph {
+	color: #000000;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	font-weight: 500;
+}
+
+/* Bounded hero height: only vh/px (no % of parent) so fullscreen & large monitors behave */
+.hero-carousel .hero-carousel-img {
+	display: block;
+	width: 80%;
+	height: max(220px, min(50vh, 560px));
+	object-fit: cover;
+	object-position: center;
+}
+
+@media (min-width: 992px) {
+	.hero-carousel .hero-carousel-img {
+		height: max(300px, min(58vh, 900px));
+	}
+}
+
+.my-big-space {
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+}
+
+.m-to-down-button {
+	margin-top: 6.3rem;
+}
+
+.m-to-down-button:hover {
+	color: var(--main-color-red) !important;
+	background-color: #ffffff;
+	border-color: var(--main-color-red);
 }
